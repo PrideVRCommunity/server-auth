@@ -5,13 +5,6 @@
         <field name="model">auth.oauth.provider</field>
         <field name="inherit_id" ref="auth_oauth.view_oauth_provider_form" />
         <field name="arch" type="xml">
-            <field name="name" position="after">
-                <field name="flow" />
-                <field
-                    name="token_map"
-                    placeholder="e.g from:to upn:email sub:user_id"
-                />
-            </field>
             <field name="client_id" position="after">
                 <field name="client_secret" />
             </field>
